@@ -21,6 +21,54 @@
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.fresh-harvest-box-container{
+    background-color: #AE1332;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.fresh-harvest-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fresh-harvest-box-container .fresh-harvest-box-title{
+    font-family: var(--dm500-s32-lh32);
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #FFFFFF;
+    width: 300px;
+    margin: 0;
+    position: relative;
+    top: 45px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 70px rgba(0,0,0,.1);
+}
+
+.fresh-harvest-box-container .fresh-harvest-box-img{
+    width: 335px;
+    height: 476px;
+    border-radius: 20px;
+}
+
+
+.fresh-harvest-img{
+    display: none;
+}
+
+.fresh-harvest-box-description{
+    display: none;
+}
+
+
+/* footer*/
+
 .footer-container{
     display:flex;
     flex-direction: column;
@@ -64,7 +112,11 @@
 }
 
 .footer-img-fresh-harvest .icon-fresh-harvest .text{
-    font-family: var(--dm700-s14-lh18);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+
     letter-spacing: -0.04em;
     text-align: center;
     color: var(--pink);
@@ -79,7 +131,11 @@
     align-items: center;
     gap: 35px;
     list-style-type: none;
-    font-family: var(--dm400-s14-lh18);
+    font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+
     letter-spacing: -0.04em;
     text-align: center;
     color: var(--pink);
@@ -88,7 +144,12 @@
 }
 
 .footer-links .link{
-    font-family: var(--dm400-s14-lh18);
+    font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+
+
     letter-spacing: -0.04em;
     text-align: center;
     color: var(--pink);
@@ -161,7 +222,12 @@
 }
 
 .footer-container .social-media-adress .phone-adress .phone{
-    font-family: var(--dm400-s14-lh18);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    
+    
     letter-spacing: 0em;
     text-align: left;
     text-decoration: none;
@@ -171,7 +237,11 @@
 }
 
 .footer-container .social-media-adress .phone-adress .adress{
-    font-family: var(--dm400-s14-lh18);
+    font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--pink);
@@ -198,3 +268,140 @@
     fill: var(--green);
 }
 
+
+@media screen and (min-width:768px){
+    .fresh-harvest-box-container{
+        width: 768px;
+        gap: 70px;
+        padding-bottom: 70px;
+    }
+
+    .fresh-harvest-box{
+        display: inline-block;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box-title{
+        font-size: 54px;
+        font-weight: 500;
+        line-height: 54px;
+        width: 648px;
+        top: 30px;
+    }
+
+    .fresh-harvest-img{
+        display: inline-block;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box-img{
+        width: 344px;
+        height: 480px;
+    }
+
+    .fresh-harvest-box-description{
+        width: 492px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box-description p{
+        width: 492px;
+        height: 54px;
+        font-family: var(--dm400-s14-lh18);
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box-description .fresh-harvest-box-buton {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box-description input{
+        width: 292px;
+        height: 48px;
+        border-radius: 100px;
+        border: 1px solid #ffffff4d;
+        background-color: #AE1332;
+        outline: none;
+        padding: 0 0 0 14px;
+        color: #FFFFFF;
+        font-family: var(--dm400-s14-lh18);
+        letter-spacing: -0.04em;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box-description input::placeholder{
+        width: 74px;
+        height: 18px;
+        top: 149px;
+        left: 124px;
+        opacity: 0.5px;
+        font-family: var(--dm400-s14-lh18);
+        letter-spacing: -0.04em;
+        text-align: left;
+        color: #ffffff4d;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box-description button{
+        width: 102px;
+        height: 48px;
+        border-radius: 100px;
+        background-color: #A4CB66;
+        font-family: var(--dm400-s14-lh18);
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        transition: background-color var(--transition);
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box-description button:hover,
+    .fresh-harvest-box-container .fresh-harvest-box-description button:focus{
+        background-color: #9DC162;
+    }    
+}
+
+@media screen and (min-width:1280px){
+    .fresh-harvest-box-container{
+        width: 1280px;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box{
+        display: inline-block;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+    }    
+
+    .fresh-harvest-box-container .fresh-harvest-box .fresh-harvest-box-title{
+        width: 740px;
+        height: 128px;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 64px;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-box .fresh-harvest-box-img{
+        width: 792px;
+        height: 502px;
+        border-radius: 20px;
+    }
+
+    .fresh-harvest-box-container .fresh-harvest-img{
+        width: 400px;
+        height: 502px;
+        border-radius: 20px;
+    }
+}
